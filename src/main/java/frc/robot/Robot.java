@@ -57,10 +57,10 @@ public class Robot extends TimedRobot {
     public void robotPeriodic() {
 
         if(invertPowerTick){
-            Motors.motorPower = Motors.motorPower - 0.01f;
+            Motors.motorPower = Motors.motorPower - 0.001f;
         }
         else{
-            Motors.motorPower = Motors.motorPower + 0.01f;
+            Motors.motorPower = Motors.motorPower + 0.001f;
         }
 
         Motors.motor1.set(ControlMode.PercentOutput,Motors.motorPower);
